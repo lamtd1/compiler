@@ -1,5 +1,7 @@
 import subprocess
 import difflib
+import os
+
 
 for i in range(1, 8):
     parser = "./parser"
@@ -20,6 +22,7 @@ for i in range(1, 8):
         tofile=result_file,
         lineterm=""
     )
+
 
     print(f"\n===== RESULT {i} DIFF =====\n")
     has_diff = False
